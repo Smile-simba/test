@@ -1,0 +1,159 @@
+/*整体背景*/
+body{
+    background:#9fe5ac;
+}
+/*地图*/
+.map {
+    width: 875px;
+    height: 525px;
+    background:url(../images/grass.jpg) no-repeat;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -350px;
+    margin-top: -260px;
+    border-radius: 30px;
+}
+/*地图左上分数*/
+.map #score{
+    font-size: 25px;
+    font-weight: bold;
+    padding:30px;
+}
+/*按钮*/
+.button{
+    position: relative;
+    left:120px;
+    top:65px;
+    width: 120px;
+    height: 525px;
+}
+.button a{
+    display: block;
+    line-height: 50px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+}
+#play:hover,#record:hover,#difficulty:hover,#intro:hover{
+    -webkit-transform: scale(1.1);
+    cursor:pointer;
+}
+#play,#record,#difficulty,#intro,#difficult,#easy,#stop{
+    width: 120px;
+    height: 50px;
+    background-color: rgb(250, 116, 53);
+    font-size: 16px;
+    border-radius: 30px;
+    position: absolute;
+    left: 0;
+    transition: all 500ms;
+    -webkit-transition: all 500ms;
+    -moz-transition: all 500ms;
+    -ms-transition: all 500ms;
+}
+#stop{
+    display: none;
+}
+
+.button #play{
+    top:15%;
+}
+.button #record{
+    top:35%;
+}
+.button #difficulty{
+    top:55%;
+}
+.button #intro{
+    top:75%;
+}
+
+#difficult{
+    left: 350%;
+    top: 50%;
+    display: none;
+    z-index: 9999;
+}
+#easy{
+    left: 600%;
+    top: 50%;
+    display: none;
+    z-index: 9999;
+}
+/*中间提示信息——最高纪录和介绍*/
+#inform-intro,#inform-record{
+    width: 260px;
+    height: 400px;
+    background:url(../images/inform.png);
+    position: absolute;
+    text-align: center;
+    left: 30%;
+    top: 12%;
+    z-index: 9999;
+    display: none;
+    padding: 15px 20px;
+}
+#inform-record{
+    height: 290px;
+    padding: 70px 20px;
+}
+#inform-intro p,#inform-record p{
+    font-size: 16px;
+    font-weight: bold;
+    color:#000;
+    line-height: 40px;
+}
+#inform-record p{
+    font-size: 23px;
+}
+#inform-intro input,#inform-record input{
+    display: block;
+    width:110px;
+    height: 38px;
+    background:url(../images/qd.png);
+    border: none;
+    text-align: center;
+    line-height: 38px;
+    position:absolute;
+    left:55%;
+    top:75%;
+    margin-left: -70px;
+    cursor:pointer;
+}
+#inform-record input{
+    top:65%;
+}
+/*中间提示信息——结束*/
+#infrom-end{
+    width: 400px;
+    height: 402px;
+    background:url(../images/inform2.png) no-repeat;
+    position: absolute;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -200px;
+    margin-top:-210px;
+    z-index: 9999;
+    display: none;
+}
+#infrom-end p{
+    font-size: 30px;
+    font-weight: bold;
+    color:red;
+    margin-top:140px;
+}
+#infrom-end input{
+    display: block;
+    width:112px;
+    height: 38px;
+    background:url(../images/qd.png);
+    border: none;
+    text-align: center;
+    line-height: 38px;
+    position:absolute;
+    left:50%;
+    margin-left: -70px;
+    cursor:pointer;
+}
